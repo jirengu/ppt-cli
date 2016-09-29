@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+
+
+
+/**
+ * Handle cli input
+ */
+if (!module.parent) {
+    var yargs = require("yargs")
+        .command("ppt", "根据配置文件创建 slides Html 文件夹")
+        .command("ppt file.md", "根据 file.md 创建 slide Html")
+
+        .epilogue("更多使用方法，查看: https://github.com/jirengu/ppt-cli ");
+
+    var commands = yargs.argv._;
+
+    //argv eg: ppt file.md -o www/a.html   ->  { _: [ 'a.md' ], o: 'www/b.html', '$0': 'ppt' }
+    handleCli(commands, yargs.argv);
+
+
+    //yargs.showHelp();
+
+}
+
+/**
+ * @param {{cli: object, [whitelist]: array, [cb]: function}} opts
+ * @returns {*}
+ */
+function handleCli(commands, argv) {
+    return require("../lib/ppt")(commands, argv);
+}
+
+module.exports = handleCli;
+
