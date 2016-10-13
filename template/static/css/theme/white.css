@@ -44,6 +44,7 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: none;
@@ -141,7 +142,6 @@ body {
 .reveal pre {
   display: block;
   position: relative;
-  width: 90%;
   margin: 20px auto;
   text-align: left;
   font-size: 0.55em;

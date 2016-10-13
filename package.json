@@ -1,9 +1,9 @@
 {
   "name": "ppt-cli",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "一个 markdown 制作在线 ppt 的工具",
   "main": "lib/ppt.js",
-  "bin":{
+  "bin": {
     "ppt": "./bin/ppt",
     "slides": "./bin/ppt",
     "slide": "./bin/ppt"
@@ -15,11 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^0.22.0",
+    "connect": "^3.5.0",
     "copyfiles": "^1.0.0",
     "ejs": "^2.5.2",
     "markdown-it": "^8.0.0",
     "markdown-it-attrs": "^0.7.1",
     "ncp": "^2.0.0",
+    "open": "0.0.5",
+    "serve-static": "^1.11.1",
     "yargs": "^5.0.0"
   },
   "devDependencies": {

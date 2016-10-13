@@ -325,7 +325,6 @@ body {
   margin: auto;
   overflow: visible;
   z-index: 1;
-  text-align: center;
   -webkit-perspective: 600px;
           perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
@@ -775,7 +774,7 @@ body {
   top: 0;
   left: 50%;
   margin: 0;
-  text-align: center; }
+  }
 
 .no-transforms .reveal .controls,
 .no-transforms .reveal .progress {
