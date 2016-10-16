@@ -8,6 +8,8 @@ ppt file.md
 
 ppt a.md --theme=black --transition=zoom
 
+ppt https://raw.githubusercontent.com/jirengu/server-mock/master/README.md
+
 ```
 
 ### Available parameters
