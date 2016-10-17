@@ -1,6 +1,6 @@
 {
   "name": "ppt-cli",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "一个 markdown 制作在线 ppt 的工具",
   "main": "lib/ppt.js",
   "bin": {
@@ -28,5 +28,13 @@
   },
   "devDependencies": {
     "ejs": "^2.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirengu/ppt-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jirengu/ppt-cli/issues"
+  },
+  "homepage": "https://github.com/jirengu/ppt-cli#readme"
 }
