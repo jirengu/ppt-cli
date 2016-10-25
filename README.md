@@ -35,7 +35,7 @@ by ruoyu@jirengu
 - easy to use
 - easy to deply
 
-## how to use?{.align-center}
+## how to use?
 
 
 ### install ppt-cli
@@ -58,6 +58,65 @@ run
 
 
 ```
+
+## More usage
+
+
+### Adding custom attributes
+```
+### title{#header.layout data-name="hunger valley"}
+add id(header), class(layout) and data-name(hunger valley) to current element <h3> and current section <section>
+
+```
+### Using javascript
+```
+### title
+<script>
+alert(1)
+</script>
+
+```
+Javascript belong to current section will run automatically when turning to this section
+
+<script>
+alert(1)
+</script>
+
+### Using HTML
+```
+<button id="btn">click me</button>
+<script>
+  btn.onclick = function(){
+    alert('I am clicked')
+  }
+</script>
+```
+<button id="btn">click me</button>
+<script>
+  btn.onclick = function(){
+    alert('I am clicked')
+  }
+</script>
+
+
+
+### Custom content align {.align-center}
+> add a class `align-center` to current section by using {.align-center} after the title
+
+### Using custom background images {data-background-image="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg"}
+```
+### Section with background image {data-background-image="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg"}
+```
+
+### Using custom background color {data-background-color="blue"}
+```
+###  Section with custom background color{data-background-color="blue"}
+```
+
+
+
+### More effect?
+visit [https://github.com/hakimel/reveal.js](https://github.com/hakimel/reveal.js)
 
 
 
