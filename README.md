@@ -14,7 +14,7 @@ ppt https://raw.githubusercontent.com/jirengu/server-mock/master/README.md
 
 ### Available parameters
 
-- --theme: theme of your slide. You can set `beige, black, blood, league, moon, night, serif, simple, sky, solarized, white`.  Default is black.
+- --theme: theme of your slide. You can set `beige, black, blood, league, moon, night, serif, simple, sky, solarized, white, star`.  Default is league.
 - --transition: Transition effect of you slide. You can set `none/fade/slide/convex/concave/zoom`. Default is slide.
 - --align: Align of your text. You can set  left/center/right. Default is left.
 - --css: Custom style sheets. eg: --css="http://mystyle.com/index.css"
@@ -64,7 +64,7 @@ run
 
 ### Adding custom attributes
 ```
-### title{#header.layout data-name="hunger valley"}
+### title{#header .layout data-name="hunger valley"}
 add id(header), class(layout) and data-name(hunger valley) to current element <h3> and current section <section>
 
 ```
@@ -100,8 +100,9 @@ alert(1)
 
 
 
-### Custom content align {.align-center}
-> add a class `align-center` to current section by using {.align-center} after the title
+### Custom content align {.title-center .align-left}
+> add a class `align-left` to current section which align the content to left
+> add a class `title-center` to current title(h3), which align the title to center
 
 ### Using custom background images {data-background-image="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg"}
 ```
