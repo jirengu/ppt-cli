@@ -4,7 +4,7 @@ A slides creator framework by using markdown.
 ## How to use
 
 
-### First step, install ppt-cli
+#### First step, install ppt-cli
 Run 
 
 ```bash
@@ -12,12 +12,12 @@ npm install -g ppt-cli
 ```
 
 
-### Second step, write markdown file
+#### Second step, write markdown file
 Write markdown file which would be translated to html file.
 
-Your can alse use an online markdown file such as 'https://raw.githubusercontent.com/jirengu/server-mock/master/README.md'
+Your can alse use an online markdown file such as `https://raw.githubusercontent.com/jirengu/server-mock/master/README.md`
 
-### Third stip, run command
+#### Third stip, run command
 
 Run  
 
@@ -35,7 +35,7 @@ ppt https://raw.githubusercontent.com/jirengu/server-mock/master/README.md
 - `--theme`: theme of your slide. You can set `beige, black, blood, league, moon, night, serif, simple, sky, solarized, white, star`.  Default is league.
 - `--transition`: Transition effect of you slide. You can set `none/fade/slide/convex/concave/zoom`. Default is slide.
 - `--align`: Align of your text. You can set  left/center/right. Default is left.
-- `--cs`s: Custom style sheets. eg: --css="http://mystyle.com/index.css"
+- `--css`: Custom style sheets. eg: --css="http://mystyle.com/index.css"
 - `--js`: Custom js. eg: --js="./js/index.js"
 - `--title`: Slide title
 
@@ -126,7 +126,7 @@ Javascript belong to current section will run automatically when slides turning 
 
 
 ### More effect?
-visit [https://github.com/hakimel/reveal.js](https://github.com/hakimel/reveal.js)
+Visit [https://github.com/hakimel/reveal.js](https://github.com/hakimel/reveal.js)
 
 
 
