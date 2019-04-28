@@ -1,12 +1,30 @@
 # ppt-cli
-a slides framework using makrdown
+A slides creator framework by using markdown.
 
-## Usage
+## How to use
 
+
+### First step, install ppt-cli
+Run 
+
+```bash
+npm install -g ppt-cli
 ```
+
+
+### Second step, write markdown file
+Write markdown file which would be translated to html file.
+
+Your can alse use an online markdown file such as 'https://raw.githubusercontent.com/jirengu/server-mock/master/README.md'
+
+### Third stip, run command
+
+Run  
+
+```bash
 ppt file.md 
 
-ppt a.md --theme=black --transition=zoom
+ppt file.md --theme=black --transition=zoom
 
 ppt https://raw.githubusercontent.com/jirengu/server-mock/master/README.md
 
@@ -14,48 +32,36 @@ ppt https://raw.githubusercontent.com/jirengu/server-mock/master/README.md
 
 ### Available parameters
 
-- --theme: theme of your slide. You can set `beige, black, blood, league, moon, night, serif, simple, sky, solarized, white, star`.  Default is league.
-- --transition: Transition effect of you slide. You can set `none/fade/slide/convex/concave/zoom`. Default is slide.
-- --align: Align of your text. You can set  left/center/right. Default is left.
-- --css: Custom style sheets. eg: --css="http://mystyle.com/index.css"
-- --js: Custom js. eg: --js="./js/index.js"
-- --title: Slide title
+- `--theme`: theme of your slide. You can set `beige, black, blood, league, moon, night, serif, simple, sky, solarized, white, star`.  Default is league.
+- `--transition`: Transition effect of you slide. You can set `none/fade/slide/convex/concave/zoom`. Default is slide.
+- `--align`: Align of your text. You can set  left/center/right. Default is left.
+- `--cs`s: Custom style sheets. eg: --css="http://mystyle.com/index.css"
+- `--js`: Custom js. eg: --js="./js/index.js"
+- `--title`: Slide title
 
-## Silde source file example
+## Markdown file example
 
 example.md
 
 ```
-# a slides framework using mardkown
+# A slides framework using mardkown
 
-by ruoyu@jirengu
+By ruoyu@jirengu
 
-## why use ppt-cli?
-- easy to install
-- easy to use
-- easy to deply
+## Why use ppt-cli?
+- Easy to install
+- Easy to use
 
-## how to use?
+### Easy to install
+Install this tool by only one command.
 
+### Easy to use
+Use this tool by only one command.
 
-### install ppt-cli
-	run
-	```
-	npm install -g ppt-cli
-	```
+## How to use
+Run `npm install -g ppt-cli`.
 
-### write markdown file
-write markdown file that will be translated to html file
-eg: example.md
-
-### run command
-
-run 
-
-	```
-	ppt example.md
-	```
-
+## Thanks
 
 ```
 
@@ -63,12 +69,19 @@ run
 
 
 ### Adding custom attributes
-```
+Add id(header), class(layout) and data-name(hunger valley) to current `<h3>` element and current section `<section>` element .
+	
+```bash
 ### title{#header .layout data-name="hunger valley"}
-add id(header), class(layout) and data-name(hunger valley) to current element <h3> and current section <section>
+<style>
+#header {
+  color: red;
+}
+</style>
 
 ```
-### Using javascript
+### Using JavaScript
+
 ```
 ### title
 <script>
@@ -76,11 +89,8 @@ alert(1)
 </script>
 
 ```
-Javascript belong to current section will run automatically when turning to this section
+Javascript belong to current section will run automatically when slides turning to this section.
 
-<script>
-alert(1)
-</script>
 
 ### Using HTML
 ```
@@ -91,25 +101,24 @@ alert(1)
   }
 </script>
 ```
-<button id="btn">click me</button>
-<script>
-  btn.onclick = function(){
-    alert('I am clicked')
-  }
-</script>
 
 
 
-### Custom content align {.title-center .align-left}
-> add a class `align-left` to current section which align the content to left
-> add a class `title-center` to current title(h3), which align the title to center
+### Custom content align 
+- add a class `align-left` to current section which align the content to left
+- add a class `title-center` to current title(h3), which align the title to center
 
-### Using custom background images {data-background-image="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg"}
+```bash
+### Section title{.title-center .align-left}
+```
+
+
+### Using custom background images 
 ```
 ### Section with background image {data-background-image="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg"}
 ```
 
-### Using custom background color {data-background-color="blue"}
+### Using custom background color
 ```
 ###  Section with custom background color{data-background-color="blue"}
 ```
