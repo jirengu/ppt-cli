@@ -4,7 +4,7 @@ A slides creator framework by using markdown.
 ## How to use
 
 
-#### First step, install ppt-cli
+### Step 1, install ppt-cli
 Run 
 
 ```bash
@@ -12,12 +12,12 @@ npm install -g ppt-cli
 ```
 
 
-#### Second step, write markdown file
+#### Step 2, write markdown file
 Write markdown file which would be translated to html file.
 
 Your can alse use an online markdown file such as `https://raw.githubusercontent.com/jirengu/server-mock/master/README.md`
 
-#### Third stip, run command
+#### Step 3, run command
 
 Run  
 
